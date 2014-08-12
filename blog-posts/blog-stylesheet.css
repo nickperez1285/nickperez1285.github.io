@@ -24,6 +24,7 @@ a:hover{
 	background: #eee;
 	border: .1em solid ;
 	margin bottom: .5em;
+	font-family: "courier";
 
 
 }
@@ -31,8 +32,9 @@ a:hover{
 #top{ 
 font-size: 30px;
 text-align: center ;
-font-family: "Impact";
-color: red;
+font-family: "courier";
+color: orange ;
+;
 }
 
 html{
