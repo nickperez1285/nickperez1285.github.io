@@ -1,8 +1,40 @@
-*{
-	color: red;
-	background-color: blue ;
-	font-size: 10px;
-}
-.links{
-	font-size : 30px ;
+
+.grid{
+	border: .125rem solid;
+	display: inline-block ;
+	background: #eee;
+	}
+a:link{
+	font-size :25px ;
+	text-decoration: none ;
 	} 
+a:visited{ 
+	 color: #00FF00
+}
+a:hover{
+
+	color: #FF0000
+}
+
+#top1{
+	font-size: 3em;
+	padding:.01em ;
+	text-align:center ;
+	color: blue ;
+	background: #eee;
+	border: .1em solid ;
+	margin bottom: .5em;
+
+
+}
+
+#top{ 
+font-size: 30px;
+text-align: center ;
+font-family: "Impact";
+color: red;
+}
+
+html{
+    background-image: url(	http://www.babson.edu/Academics/undergraduate/academic-programs/PublishingImages/san-franc.jpg)
+}
