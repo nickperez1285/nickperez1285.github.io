@@ -18,6 +18,9 @@ a:hover{
 
 #top1{
 	font-size: 3em;
+body { 
+	background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
+}
 	padding:.01em ;
 	text-align:center ;
 	color: blue ;
@@ -39,4 +42,7 @@ color: orange ;
 
 html{
     background-image: url(	http://www.babson.edu/Academics/undergraduate/academic-programs/PublishingImages/san-franc.jpg)
+}
+#relect{
+	text-align:center ;
 }
