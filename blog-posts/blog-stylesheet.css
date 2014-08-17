@@ -18,26 +18,24 @@ a:hover{
 
 #top1{
 	font-size: 3em;
-body { 
-	background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
+	font-family: "courier";
+	text-align: center ;
 
 	padding:.01em ;
-	text-align:center ;
-	color: blue ;
-	background: #eee;
+	
+	
 	border: .1em solid ;
 	margin bottom: .5em;
-	font-family: "courier";
-
 
 }
+
 
 #top{ 
 font-size: 30px;
 text-align: center ;
 font-family: "courier";
 color: orange ;
-;
+
 }
 
 html{
