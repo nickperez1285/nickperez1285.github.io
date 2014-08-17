@@ -39,8 +39,9 @@ color: orange ;
 }
 
 html{
-    background-image: url(	http://www.babson.edu/Academics/undergraduate/academic-programs/PublishingImages/san-franc.jpg)
+ background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
 }
+
 #reflect{
 	text-align:center ;
 }
