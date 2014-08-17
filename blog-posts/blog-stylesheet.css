@@ -22,7 +22,7 @@ a:hover{
 	text-align: center ;
 
 	padding:.01em ;
-	
+	background: #eee;
 	
 	border: .1em solid ;
 	margin bottom: .5em;
@@ -34,7 +34,7 @@ a:hover{
 font-size: 30px;
 text-align: center ;
 font-family: "courier";
-color: orange ;
+color: black ;
 
 }
 
