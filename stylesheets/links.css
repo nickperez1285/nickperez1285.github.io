@@ -1,0 +1,11 @@
+html{
+ background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
+}
+
+body{
+	
+	border: .125rem solid;
+	display: inline-block ;
+	background: #eee;
+	
+}
