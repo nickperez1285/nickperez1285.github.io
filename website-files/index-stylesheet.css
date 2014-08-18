@@ -43,8 +43,10 @@ html{
 }
 
 footer{ 
+	text-align:right;
 	margin: 0 ;
-	background-color: black ;
-	width: 100% 
+	background-color: none
+	width: 100% ;
+	font-size: .5em;
 }
 
