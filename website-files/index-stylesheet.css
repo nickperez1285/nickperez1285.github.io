@@ -42,6 +42,9 @@ html{
  background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
 }
 
-#reflect{
-	text-align:center ;
+footer{ 
+	margin: 0 ;
+	background-color: black ;
+	width: 100% 
 }
+
