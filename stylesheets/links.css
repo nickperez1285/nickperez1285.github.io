@@ -8,8 +8,7 @@ h3{
 
 	padding:.01em ;
 	background: #eee;
-	
-	border: .075em solid;
+
 	margin bottom: .5em;
 }
 body{
@@ -30,5 +29,7 @@ body{
 ul{ 
 list-style: none;
 font-size: 1em;
-text-decoration:  none;
+}
+li{
+	text-decoration:none;
 }
