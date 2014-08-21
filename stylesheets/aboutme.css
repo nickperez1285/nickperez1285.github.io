@@ -2,10 +2,20 @@ html{
  background-image: url('http://upload.wikimedia.org/wikipedia/en/7/75/DowntownSF.jpg');
 }
 
+h2{
+	text-align: center;
+}
 body{
 	
 	border: .125rem solid;
 	display: inline-block ;
-	background: #eee;
+	background: navajowhite;
 	
+	font-family: courier;
+	font-size: smaller;
+}
+
+#me{
+	width="404" 
+	height="228"
 }

@@ -2,8 +2,12 @@
 .grid{
 	border: .125rem solid;
 	display: inline-block ;
+
 	background: #eee;
-	}
+	font-size: 25px;
+	width: 7em;
+	text-align: center;
+}
 a:link{
 	font-size :20px ;
 	text-decoration: none ;
@@ -17,16 +21,18 @@ a:hover{
 }
 
 #top1{
-	font-size: 3em;
+	font-size: 40px;
 	font-family: "courier";
 	text-align: center ;
 
-	padding:.01em ;
+	padding: .001em;
 	background: #eee;
 	
 	border: .1em solid ;
 	margin bottom: .5em;
 
+
+	width: 950.9px;
 }
 
 
@@ -34,8 +40,9 @@ a:hover{
 font-size: 30px;
 text-align: center ;
 font-family: "courier";
-color: black ;
+color: rgba(0, 0, 0, 0.59);
 
+width: 750px;
 }
 
 html{
@@ -49,4 +56,5 @@ footer{
 	width: 100% ;
 	font-size: .5em;
 }
+
 
