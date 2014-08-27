@@ -1,0 +1,48 @@
+!DOCTYPE html>
+<html>
+
+	
+<head>
+		<title>
+			Tech blog public ruby methods 
+		</title>
+		
+	</head>
+	<h3> Ruby's Zip Methods</h3>
+<body>
+<p>
+    A method in Ruby is defined as a"... bundle one or more repeatable statements into a single unit.". One particular method that I have found very useful is the ".zip" method. This method will take an single array and merge it's elements with one more other arrays creating one single array consisting of subarrays with corresponding elements.  The following is a basic example of what the .zip method will return when dealing with two simple arrays: 
+
+    array1 = [a,b,c]
+    array2 = [1,2,3]
+    array1.zip(array2)
+    => [["a", 1], ["b", 2], ["c", 3]]
+
+    In this  example , the elements of "array1" have been zipped with those of "array2". It returns an array consisting of subarrays with elements of  matching index numbers. The .zip method can be expanded to accept multiple arrays  such as in the next example: 
+
+    array1= ['a','b','c','d']
+    array2= [1,2,3,4]
+    array3= ['@','#','$','%,'!']
+
+    array1.zip(array2,array3)
+
+   => [["a", 1, "@"], ["b", 2, "#"], ["c", 3, "$"], ["d", 4, "%"]]
+    As can be seen in this last example, so long as the base array contains enough elements, the resulting array of subarrays will consists of elements with the same index number. 
+
+    One of the more common uses for the .zip method is for converting arrays into hashes. The .zip method can take two arrays and have their matching elements storred into one single array that can easily be turned into a hash.
+
+    array1= [ 'key1', 'key2', 'key3'] 
+    array2= [ 'val1', 'val2', 'val3']
+
+    array_unhashed = array1.zip(array2)
+    => [["key1", "val1"], ["key2", "val2"], ["key3", "val3"]]
+
+    hashed_array = Hash[array_unhashed.each{|key,value| [key => value]}]
+
+    =>{"key3"=>"val3", "key1"=>"val1", "key2"=>"val2"}
+
+    The array_unhased was simply iterated through so that it could be output in hash form. You'll notice that the ["key","val"] array pairs in the primary array are  identical to the  "key"=> "val"  pairs within the hash. This is done all thanks to the .zip method.
+</p>
+
+	</body>
+</html>
