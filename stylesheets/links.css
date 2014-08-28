@@ -4,32 +4,46 @@ html{
 h3{
 	font-size: 3em;
 	font-family: "courier";
-	text-align: center ;
+	text-align: center;
+	border: solid; 
 
 	padding:.01em ;
 	background: #eee;
+	
 
-	margin bottom: .5em;
 }
+
 body{
 	
-	/* border: .125rem solid; */
-	display: block;
-	background: #eee;
-	padding:.01em ;
-	background: #eee;
-	
-	border: .2em solid;
 	margin bottom: .5em;
 	
 	text-align: center;
 	font-size: large;
 }
 
+
 ul{ 
 list-style: none;
 font-size: 1em;
 }
-li{
-	text-decoration:none;
+
+#list{ 
+	text-align:center ;
+	border-color: black;
+	background-color: navajowhite;
+	border-style: solid;
+	font-size: 2em;
+}
+
+a:link{
+	font-size :20px ;
+	text-decoration: none ;
+	} 
+a:visited{ 
+	 color: grey
+}
+a:hover{
+
+	color: gold
+
 }
