@@ -3,10 +3,15 @@
 	border: .125rem solid;
 	display: inline-block ;
 
-	background: #eee;
-	font-size: 25px;
+
+	background-color: rgba(255, 255, 255, 0.86);
+
+	font-size: larger;
 	width: 7em;
 	text-align: center;
+	margin-left:50px; 
+	position:relative;
+
 }
 a:link{
 	font-size :20px ;
@@ -32,19 +37,34 @@ a:hover{
 	border: .1em solid ;
 	margin bottom: .5em;
 font-weight: bold ;
-
+font-style: italic;
+margin-left: 20px;
 
 }
 
 
 #top{ 
-font-size: 30px;
+font-size: 35px;
 text-align: center ;
 font-family: "courier";
 color: rgba(0, 0, 0, 0.59);
 
-width: 750px;
+width: 850px;
 }
+
+
+#updates{
+	border-style: solid ;
+	display: block;
+position: absolute ; 
+margin-left: 450px; 
+min-height: 150px;
+width: 500px; 
+font-size:40px; 
+background-color: rgba(255, 255, 255, 0.86);
+padding-left: 100px ;
+}
+
 
 html{
  background-image: url('http://www.tradeandexportme.com/wp-content/uploads/2014/07/SF.jpg');
@@ -53,13 +73,11 @@ html{
 }
 
 footer{ 
-	text-align:center;
-	margin: 0 ;
-	background-color: none
-	width: 100% ;
+	text-align:right;
+	margin-right: 150px ;
+	margin-top:200px;
+	background-color: none;
 	font-size: .5em;
 }
-
-
 
 
