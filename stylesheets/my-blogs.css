@@ -1,12 +1,30 @@
-html{
- background-image: url('http://www.tradeandexportme.com/wp-content/uploads/2014/07/SF.jpg');
+
+body{ 
+	background: #eee;
 }
 
-body{
-	
-	border: .125rem solid;
+.blogs{
+
 	display: inline-block ;
-	background: #eee;
 	text-decoration:none ;
 	
+}
+#top{
+	text-align:center;
+	border:solid ;
+
+}
+
+
+a:link{
+	font-size :20px ;
+	text-decoration: none ;
+	} 
+a:visited{ 
+	 color: grey
+}
+a:hover{
+
+	color: gold
+
 }
