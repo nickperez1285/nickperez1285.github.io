@@ -6,14 +6,11 @@ h3{
 	border: solid; 
 
 	padding:.01em ;
-	background: #eee;
 	
 
 }
 
 body{
-	
-	margin bottom: .5em;
 	
 	text-align: center;
 	font-size: large;
@@ -23,14 +20,6 @@ body{
 ul{ 
 list-style: none;
 font-size: 1em;
-}
-
-#list{ 
-	text-align:center ;
-	border-color: black;
-	background-color: navajowhite;
-	border-style: solid;
-	font-size: 2em;
 }
 
 a:link{
