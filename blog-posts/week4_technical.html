@@ -11,18 +11,18 @@
 	<h3> Ruby's Zip Method</h3>
 <body>
 <p>
-    A method in Ruby is defined as a"... bundle one or more repeatable statements into a single unit.". One particular method that I have found very useful is the ".zip" method. This method will take an single array and merge it's elements with one more other arrays creating one single array consisting of sub-arrays with corresponding elements.  The following is a basic example of what the .zip method will return when dealing with two simple arrays: </p>
+    A method in Ruby is defined as a"... bundle [of] one or more repeatable statements into a single unit.". One particular method that I have found very useful is the ".zip" method. This method will take an single array and merge it's elements with one more other arrays creating one single array consisting of sub-arrays with corresponding elements.  The following is a basic example of what the .zip method will return when dealing with two simple arrays: </p>
 
-<p> array1 = [a,b,c]</p>
-<p>   array2 = [1,2,3] </p>
+<p> array1 = [a,b,c]<br>
+  array2 = [1,2,3] </p>
 <p> array1.zip(array2)</p>
  <p>   => [["a", 1], ["b", 2], ["c", 3]] </p>
 
   <p>  In this  example , the elements of "array1" have been zipped with those of "array2". It returns an array consisting of subarrays with elements of  matching index numbers. The .zip method can be expanded to accept multiple arrays  such as in the next example: </p>
 
-   <p> array1= ['a','b','c','d']</p>
-    <p>array2= [1,2,3,4]</p>
-   <p> array3= ['@','#','$','%,'!']</p>
+   <p> array1= ['a','b','c','d']<br>
+       array2= [1,2,3,4]<br>
+       array3= ['@','#','$','%,'!']</p>
 
    <p> array1.zip(array2,array3)</p>
 
@@ -31,13 +31,13 @@
 
     <p>One of the more common uses for the .zip method is for converting arrays into hashes. The .zip method can take two arrays and have their matching elements stored into one single array that can easily be turned into a hash.</p>
 
-    <p>array1= [ 'key1', 'key2', 'key3'] </p>
-    <p>array2= [ 'val1', 'val2', 'val3']</p>
+    <p>array1= [ 'key1', 'key2', 'key3'] <br>
+    array2= [ 'val1', 'val2', 'val3']</p>
 
     <p>array_unhashed = array1.zip(array2)</p>
     <p>=> [["key1", "val1"], ["key2", "val2"], ["key3", "val3"]]</p>
 
-    <p>hashed_array = Hash[array_unhashed.each{|key,value| [key => value]}]</p>
+    <p>hashed_array = Hash[array_unhashed.each{|key,value| [key => value] }]</p>
 
     <p>=>{"key3"=>"val3", "key1"=>"val1", "key2"=>"val2"}</p>
 
