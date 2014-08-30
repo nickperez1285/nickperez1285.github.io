@@ -1,12 +1,11 @@
 
-h3{
-	font-size: 3em;
+h4{
+
 	font-family: "courier";
 	text-align: center;
 	border: solid; 
-
-	padding:.01em ;
-	
+	font-size:2em;
+	margin:20px;
 
 }
 
