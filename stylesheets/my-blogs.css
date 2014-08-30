@@ -1,6 +1,11 @@
 
+html{
+	font-family:"courier";
+}
+
 body{ 
 	background: #eee;
+	padding:20px;
 }
 
 .blogs{
@@ -12,6 +17,7 @@ body{
 #top{
 	text-align:center;
 	border:solid ;
+	margin:20px;
 
 }
 
