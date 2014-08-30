@@ -1,5 +1,5 @@
 html{
- background-image: url('http://www.tradeandexportme.com/wp-content/uploads/2014/07/SF.jpg');
+ background-image: url('http://nickperez1285.github.io/website-files/bridge.jpg');
 }
 
 #top:{
@@ -9,6 +9,7 @@ html{
 body{
 	
 	border: .125rem solid;
+	margin:100px;
 	display: inline-block ;
 	background: navajowhite;
 	padding-right: 20px;
