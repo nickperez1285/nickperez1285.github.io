@@ -30,8 +30,7 @@ a:hover{
 	font-size: 40px;
 	font-family: "courier";
 	text-align: center ;
-
-	padding: .001em;
+	margin-right: 20px;
 	background: #eee;
 	
 	border: .1em solid ;
