@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	
+<head>
+		<title>
+			Tech blog  ruby classes
+		</title>
+		
+	</head>
+	<h3> Ruby Classes, Instance Methods, and Instance Variables for Dummeez</h3>
+<body>
+<p>
+ In my quest to learn Ruby over the past year I have come to the conclusion that just about every piece of learning material intended for beginners has been written by non-beginners with a false assumption of what should be considered common sense for everyone. I can't get too mad at the authors of these things because I realize that it can be equally difficult for them to recalibrate their own understanding of Ruby in order to level with us rookies. Its like having a nuclear physicist trying to explain the basics of fission to a 1st grader.(Maybe that example is a little extreme, but you get the point. ) Fortunately I am still in that rookie phase and hopefully can  explain a few very important concepts in way that makes sense to true beginners.  <br>
+  While coding in Ruby you will often come across objects  known as a  "class". I compare classes to folders that contain pages of  blueprints for a new invention or a car. Imagine that you work at Honda  and have a cabinet of folders containing information about all of the various models of cars that they manufacture. Each car model's folder would represent a "class" within Ruby and contain all of the details  describing  what kind of parts it has and how it performs  . In order to differentiate each car model's folder we of course need to label them. In Ruby , labeling a folder creates a new class. Labels must start with the word "class" and be followed by another word that starts with a capital letter. For example, lets say we are designing a new  car that we are going to  call "Blitz". In ruby we would type :<br>
+ <p> class Blitz<br>
+end</p>
+<p>* Its important to note that every time you finish defining anything you must include "end"*</p>
+  <p>
+  Now lets say that within that folder we  have a page of blueprints that detail how it accelerates. In Ruby,  this page of performance details is called a "instance method". Methods execute a certain function and there can be several of them within a class much like a car can have different mechanisms in place for things like  accelerating or for braking. Creating a new page/ method in Ruby is accomplished by typing in the word "def" followed by any other descriptive name all in lower case letters like below. <br>
+  <p>class Blitz</p>
+  <p>def accelerate<br>
+   end</p>
+  <p>def brake <br>
+  end</p>
+  <p>end</p>
+
+  <p> Within the "accelerate" and "break" methods we describe their functions and how they interact with the rest of the Blitz car class. These method pages contain their own written details about things unique to themselves such as the dimensions of a pedal and what that pedal does. In Ruby, we call these unique details "instance variables" . Because instance variables are written  within the individual method/page  , they are unique to them and no other method. The variable name can be used again , but it will not do the same thing. Instance variables are created by typing in any word starting with a lowercase letter and then an "=" sign . <br>
+  <p>class Blitz</p>
+  <p>def accelerate<br>
+     pedal = "go"<br>
+     pedal<br>
+     end </p>
+  <p>def brake<br>
+     pedal= "stop "<br>
+     pedal<br>
+     end</p>
+    <p>end</p>
+
+    
+
+   <p> At this point you are probably wondering how we use all of these things. Ruby keeps this part simple by enabling us to use "." to execute a function . After we create a new instance of a class, we can use "." to trigger any of the methods within it. Going back to our car example, we get ready to create another "Blitz" model car starting by giving it a new name for this particular copy of it , similar to a VIN number that identifies cars of the same model.</p><br>
+    <p>car1253 = Blitz.new</p>
+
+    Then use "." to execute any of the method pages in its folder   
+   <p> car1253.accelerate <br>
+    => "go"</p>
+
+   <p> car1253.brake <br>
+       => "stop"</p><br>
+
+       <p> And that, my fellow Ruby beginners , is that. There is an almost unlimited amount of different things that we could do to this simplistic program. My intention was just to explain the concepts here the way I understand them as a beginner. In the near future , after I have learned more about Ruby , my level of understanding might skew my thoughts on what is easy and how to  explain these concepts from a beginners perspective . On that note I really hope this scenario does happen  because that would mean that I have become a  Ruby pro and am on my way to landing a job that pays BUCO bucks!!!.....  </p>
+</p>
+
+	</body>
+</html>
