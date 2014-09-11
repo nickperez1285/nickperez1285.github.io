@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	
+<head>
+		<title>
+			Week 6 tech blog
+		</title>
+		
+	</head>
+	<h3> Ruby Variable Scope </h3>
+<body>
+<p>
+	 Because Ruby is an object-oriented language and just about everything in it is an object or can be turned into one, any programs written in the language will be mostly comprised of variables.  The general understanding of a variable is that it is something  that is used  to represent something else or many other things.  For example, in algebra we often use variables to represent numbers  or equations ie. "x = 10 " or "x = y-z". When it comes to programming in Ruby, variables are used in the same way to reference something else, but they also possess a characteristic that determines its accessibility within the program it is being used. This means that there is a limit as to when and where a  variable and its assigned value remain true. These parameters within which a variable retains its value is called  it's "scope". <br> 
+
+	If we assign the value of "x" to 10 in a math equation , that "x" will be equal to 10 every time it is used . In Ruby,  "x" may be equal to 10 in some places, but may be equal to something completely different in others depending on its "scope". Setting the scope of a variable is important when we program because it enables us to have more control over how and when it is used. This saves us the trouble of having to retype the same code multiple times or create tons of new variables. <br>
+
+	Ruby has 4 types of variable scopes. Each type determines the extent to which a variable and its assigned value can be retrieved when it used within a program. The first is the local scope. This is the most common and simplest scope variables are places under. Variables within this scope all start with a lower case letter. They only maintain their assigned value within the single method/definition they are found in. If used anywhere else , they will need to be redefined.   The next scope is the instance scope. Variables with an instance scope all start with a "@" and can be accessed or redefined anywhere within a class. They hold their original assignment throughout the class unless they get reassigned a new value. If assigned a new value, the variable with instance scope will maintain that new value only in that instance it was used. For exaample if @x equals 10 in one place and then assigned to equal 15 in another , the next time it is used without being redfined @x will be equal to 10 again .  Another scope is the Class scope which is created by placin "@@" in front of the variable name . Variables possesing class scope can be used any time , but there value will always be equal to the last assignment. It @@x is equal to 10 origrinally and then changed to equal 5 somehwere else, if it is used again @@x will be equal to 5 until it is changed once again . The final variable scope is the global scope. They all begin with a "$" sign. Global scope variables are similar to class scope ones in that thair value is always equal to their last assginment. The difference between class and global scope is that global scope variables retain their value not only with in their own class, but also everywhere they are used including other classes. Variables with global scope are not commonly used because finding their value can be extremely difficult as it changes from one class to another.  
+
+
+  </p>
+
+	</body>
+</html>
