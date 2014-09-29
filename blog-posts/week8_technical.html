@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	
+<head>
+		<title>
+			Week 8 tech blog
+		</title>
+		
+	</head>
+	<h3> Ruby Recurssion  </h3>
+<body>
+	<p>
+		Throughout the course of my studies with Ruby I have come across some pretty challenging problems. Usually , with a little time and logical processing I am able to come up with bits and pieces of code that ultimately lead me towards the right solution . However, every now and then I come across a problem that no matter how hard I try or what strategy I use, I just cannot seem to figure it out. One such problem went like this . " A change machine makes coins for every denomination including zero. It starts by taking any coin of value N and returns 3 new coins, valued at N/2, N/3 and N/4 (rounding down). Write a method that returns the number of coins you are left with if you take all non-zero coins and keep feeding them". </p>
+		<p>My first instinct was to make a simple program that would loop the  output of the amount of resulting coins. However, after the first pass there would be a new set of coins each of which needed to be broken into three more coins according to how he wanted them divided. In order to asses those coins we would have to alter the the original loop code to account for the subsets of coins. This process would have to be repeated until all coins were equal to 0 . Having to repeat this process multiple  times would require one to set a conditional statement to stop the loop but doing that would require us to actually know ahead of time how many times we wanted to loop the function . This all seemed to be very time consuming and way too complex for what appeared to be a simple problem</p>
+		<p>I knew that there had to be a better way to solve this problem so I started looking up for alternative solutions. It was during this search  that I was  introduced to the concept of "recursion". Simply stated, recursion is where a function calls upon itself as a part of its own function. A function is defined using itself as part of its definition. For example, in terms of the coins problem above  recursion was that "better way" that I was looking for and is formulated as following .</p>
+		def coins(n)<br>
+  		return 1 if n == 0<br>
+  		return 3 if n == 1<br>
+ 		return coins(n / 2) + coins(n / 3) + coins(n / 4)<br>
+		end<br>
+
+		<p> As can be seen above, the "coins" method calls on itself within its definition . This allows for the same function to be executed multiple times as needed without having to add a bunch of complex code to accomplish the same thing. This is all made possible thanks to recursion .
+		<p> 
+
+
+
+
+
+	</p>
+
+</body>
+</html>
