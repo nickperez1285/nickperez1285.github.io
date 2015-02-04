@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="MapApp">
+    <div ng-controller="MainCtrl">       
+      <ion-nav-view></ion-nav-view>
+    </div>
+
+    <script id="menu.html" type="text/ng-template">
+      <ion-side-menus>
+        <ion-pane ion-side-menu-content ng-controller='HeaderCtrl'>
+          <ion-nav-bar type="bar-dark" left-buttons="leftButtons" back-button-type="button-icon" back-button-icon="ion-chevron-left"></ion-nav-bar>
+          <ion-nav-view name="menuContent"></ion-nav-view>
+        </ion-pane> 
+
+        <ion-side-menu side="left">
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">Menu</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close ui-sref="">Home</ion-item>
+
+        <ion-item nav-clear menu-close ui-sref="app.trucks">Truck List</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.me">Following</ion-item>
+
+        <ion-item nav-clear menu-close ui-sref="app.signup">Register</ion-item>
+        <ion-item nav-clear menu-close ui-sref=>Locations</ion-item>
+
+        <ion-item nav-clear menu-close ui-sref=>Location map</ion-item>
+
+        <ion-item nav-clear menu-close ui-sref="app.signin">Sign in </ion-item>
+      </ion-list>
+  </ion-side-menu>
+           <ion-side-menu side="right">
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">Filters</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close ui-sref="app.type">Food Type</ion-item>
+        <ion-item nav-clear menu-close ui-sref="app.locations">Distance</ion-item>
+      </ion-list>
+  </ion-side-menu>
+      </ion-side-menus>
+    </script>
+
+    <script id="gpsView.html" type="text/ng-template">
+   <ion-view title="Map" left-buttons="leftButtons">
+<ion-content has-header="true" scroll="false">
+
+<!-- map directive-->
+<app-map style="height:400px;margin:12px;box-shadow:0 3px 25px black;"
+    center="sf"
+    zoom="20"
+    markers="whoiswhere"
+  > 
+</app-map>
+<center><--- slide left or right  ---></center>
+</ion-content>
+</ion-view>
+    </script>
+
+  </body>
+</html>
+
+
+</body>
+
+</html>
