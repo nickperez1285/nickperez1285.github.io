@@ -1,5 +1,5 @@
 
-h4{
+h1{
 
 	font-family: "courier";
 	text-align: center;
@@ -22,8 +22,9 @@ font-size: 1em;
 }
 
 a:link{
-	font-size :20px ;
+	font-size :30px ;
 	text-decoration: none ;
+	font-family: "courier";
 	} 
 a:visited{ 
 	 color: grey
