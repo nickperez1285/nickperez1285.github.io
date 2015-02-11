@@ -50,6 +50,9 @@ nav{
 	margin-right: 5em
 }
 
+#flash{
+	border: solid ;
+}
 #updates{
 	border-style: solid ;
 	display: inline-block;
