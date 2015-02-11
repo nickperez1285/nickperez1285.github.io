@@ -1,21 +1,18 @@
 
-.grid{
+nav{
 	border: .125rem solid;
 	display: inline-block ;
 
-
 	background-color: rgba(255, 255, 255, 0.86);
 
-	font-size: larger;
-	width: 7em;
+	font-size: large;
 	text-align: center;
 	margin-left:50px; 
-	position:relative;
-	padding:20px;
+    padding:20px;
 
 }
 a:link{
-	font-size :20px ;
+	font-size :35px ;
 	text-decoration: none ;
 	} 
 a:visited{ 
@@ -27,7 +24,7 @@ a:hover{
 
 }
 
-#top1{
+#head{
 	font-size: 3em;
 	font-family: "courier";
 	text-align: center ;
@@ -49,13 +46,16 @@ color: rgba(0, 0, 0, 0.71);
 
 width: 675px;
 }
-
+nav{
+	margin-right: 5em
+}
 
 #updates{
 	border-style: solid ;
-	display: block;
+	display: inline-block;
 position: absolute ; 
-margin-left: 400px; 
+margin-left: 4em;
+margin-right: 4em;
 min-height: 150px;
 width: 500px; 
 font-size:30px; 
@@ -65,6 +65,10 @@ font-family: "courier";
 }
 h4{
 	text-align:center;
+}
+
+#head{
+	margin-bottom: 4em
 }
 
 
