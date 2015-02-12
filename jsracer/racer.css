@@ -19,7 +19,7 @@ tr#player1 td.active{
 }
 	
 tr#player2 td.active{
-	content: url('nickperez1285.github.io/jsracer/monster.jpeg');
+	content: url('https://nickperez1285.github.io/jsracer/monster.jpeg');
 }
 
 #instructions{
