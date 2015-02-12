@@ -38,3 +38,7 @@ input{
 button{
 	font-size: 2em
 }
+
+img#flash{
+	border-style: solid ;
+}
