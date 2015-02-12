@@ -15,10 +15,10 @@ text-align:center;
 }*/
 
 tr#player1 td.active{
-	content: url('/Users/NicksMac/Desktop/Nicks DBC/nickperez1285.github.io/boo.jpg');
+	content: url('/nickperez1285.github.io/jsracer/boo.jpg');
 	}
 tr#player2 td.active{
-	content: url('/Users/NicksMac/Desktop/Nicks DBC/nickperez1285.github.io/monster.jpeg');
+	content: url('/nickperez1285.github.io/jsracer/monster.jpeg');
 }
 
 #instructions{
