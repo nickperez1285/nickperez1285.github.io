@@ -1,0 +1,40 @@
+h1{	
+font-style: italic;
+text-align:center;
+}
+
+.racer_table td {
+  height: 50px;
+  width: 50px;
+  text-align: center
+
+}
+
+/*.racer_table td.active {
+  background-color: black;
+}*/
+
+tr#player1 td.active{
+	content: url('/Users/NicksMac/Desktop/Nicks DBC/nickperez1285.github.io/boo.jpg');
+	}
+tr#player2 td.active{
+	content: url('/Users/NicksMac/Desktop/Nicks DBC/nickperez1285.github.io/monster.jpeg');
+}
+
+#instructions{
+	text-align: center;
+	border-style: solid; 
+	width: 200px;
+}
+
+form{
+	font-size:2em;
+}
+
+input{
+	font-size: 20px;
+}
+
+button{
+	font-size: 2em
+}
