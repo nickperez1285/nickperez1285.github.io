@@ -9,6 +9,10 @@ h1{
 
 }
 
+li{
+	border-style: solid;
+}
+
 body{
 	
 	text-align: center;
