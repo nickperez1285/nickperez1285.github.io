@@ -15,10 +15,11 @@ text-align:center;
 }*/
 
 tr#player1 td.active{
-	content: url('/nickperez1285.github.io/jsracer/boo.jpg');
-	}
+	content: url('https://nickperez1285.github.io/jsracer/boo.jpg');
+}
+	
 tr#player2 td.active{
-	content: url('/nickperez1285.github.io/jsracer/monster.jpeg');
+	content: url('nickperez1285.github.io/jsracer/monster.jpeg');
 }
 
 #instructions{
