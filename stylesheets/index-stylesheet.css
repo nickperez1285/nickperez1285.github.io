@@ -56,8 +56,8 @@ nav{
 #updates{
 	border-style: solid ;
 	display: inline-block;
-margin-left: 4em;
-margin-right: 4em;
+margin-left: auto;
+margin-right: auto;
 min-height: 150px;
 width: 500px; 
 font-size:30px; 
