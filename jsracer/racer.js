@@ -15,10 +15,10 @@ function update_player_position(player) {
 function on_key_press(e) {
   // z
   if (e.keyCode === 90) {
-    update_player_position('#player1');
+    update_player_position('#Player1');
     // m 
   } else if (e.keyCode === 77) {
-    update_player_position('#player2');
+    update_player_position('#Player2');
   }
 }
 
@@ -29,8 +29,8 @@ function winner(player) {
   // var start = strip.children[0]
   // tdActive.className = " "
   // start.className = "active"
- var strip1= document.getElementById("player1")
- var strip2= document.getElementById("player2")
+ var strip1= document.getElementById("Player1")
+ var strip2= document.getElementById("Player2")
  var active1= strip1.querySelector('.active')
  var active2= strip2.querySelector('.active')
 var start1 = strip1.children[0]

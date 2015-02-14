@@ -14,12 +14,13 @@ text-align:center;
   background-color: black;
 }*/
 
-tr#player1 td.active{
-	content: url('https://nickperez1285.github.io/jsracer/boo.jpg');
+tr#Player1 td.active{
+	content: url('boo.jpg');
 }
+
 	
-tr#player2 td.active{
-	content: url('https://nickperez1285.github.io/jsracer/monster.jpeg');
+tr#Player2 td.active{
+	content: url('monster.jpeg');
 }
 
 #instructions{
