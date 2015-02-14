@@ -1,4 +1,6 @@
-
+body{
+	font-family: courier
+}
 nav{
 	border: .125rem solid;
 	display: inline-block ;
@@ -54,6 +56,7 @@ nav{
 	border: solid ;
 }
 #updates{
+	text-align: center ;
 	border-style: solid ;
 	display: inline-block;
 margin-left: auto;
