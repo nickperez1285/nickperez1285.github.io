@@ -1,13 +1,17 @@
+body{
+	background: url('spacetrack.jpg') ;
+	background-size: 100%
+}
 h1{	
 font-style: italic;
 text-align:center;
+color: blue;
 }
 
 .racer_table td {
   height: 50px;
   width: 50px;
-  text-align: center
-
+color: slateblue ;
 }
 
 /*.racer_table td.active {
@@ -16,17 +20,24 @@ text-align:center;
 
 tr#Player1 td.active{
 	content: url('boo.jpg');
+	height: 5em;
+	width: 4em;
+
 }
 
 	
 tr#Player2 td.active{
 	content: url('monster.jpeg');
+	height: 5em;
+	width: 4em;
 }
 
 #instructions{
 	text-align: center;
 	border-style: solid; 
 	width: 200px;
+	background-color:white;
+
 }
 
 form{
