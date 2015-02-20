@@ -2,16 +2,19 @@ body{
 	font-family: courier
 }
 nav{
+	width:100%;
+}
+ul li{
 	border: .125rem solid;
-	display: inline-block ;
-
+	display: inline ;
+	text-align: center; 
 	background-color: rgba(255, 255, 255, 0.86);
-
-	font-size: large;
-	text-align: center;
-	margin-left:50px; 
+	list-style: none;
     padding:20px;
 
+}
+li{
+	float: left;
 }
 a:link{
 	font-size :35px ;
@@ -48,17 +51,13 @@ color: rgba(0, 0, 0, 0.71);
 
 width: 675px;
 }
-nav{
-	margin-right: 5em
-}
 
-#flash{
-	border: solid ;
-}
+
+
 #updates{
 	text-align: center ;
 	border-style: solid ;
-	display: inline-block;
+	display:block;
 margin-left: auto;
 margin-right: auto;
 min-height: 150px;
@@ -72,9 +71,6 @@ h4{
 	text-align:center;
 }
 
-#head{
-	margin-bottom: 20px
-}
 
 
 html{
@@ -84,8 +80,10 @@ html{
 }
 
 footer{ 
-	margin-left: 100px ;
-	margin-top:70px;
+	margin-top:5em;
+	font-size:2em;
+	color: white ;
 }
+
 
 
