@@ -4,10 +4,29 @@ h1{
 	font-family: "courier";
 	text-align: center;
 	border: solid; 
-	font-size:2em;
 	margin:20px;
 
 }
+
+#navmap{
+
+
+/*	border: .125rem solid;
+*/	display: inline-block  ;
+	text-align: center; 
+	background-color: rgba(255, 255, 255, 0.86);
+	list-style: none;
+
+}
+
+
+#navmap li{
+	float: left;
+	font-size: 20px
+}
+
+
+
 
 li{
 	border-style: solid;
