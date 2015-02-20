@@ -1,0 +1,51 @@
+body{
+	font-family: courier
+}
+nav{
+	width:100%;
+}
+ul li{
+	border: .125rem solid;
+	display: inline ;
+	text-align: center; 
+	background-color: rgba(255, 255, 255, 0.86);
+	list-style: none;
+    padding:10px;
+
+
+}
+li{
+	float: left;
+	font-size: 20px
+}
+a:link{
+	text-decoration: none ;
+	} 
+a:visited{ 
+	 color: grey
+}
+a:hover{
+
+	color: gold
+
+}
+
+#head{
+	font-size: 3em;
+	font-family: "courier";
+	text-align: center ;
+	margin-right: 20px;
+	background: #eee;
+	
+	border:  solid ;
+font-weight: bold ;
+margin-left: 20px;
+
+}
+
+
+
+
+
+
+}
