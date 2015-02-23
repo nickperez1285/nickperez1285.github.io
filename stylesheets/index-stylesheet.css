@@ -71,6 +71,7 @@ padding: 20px ;
 font-family: "courier";
 overflow: scroll;
 height: 7em;
+border-radius: 25px; 
 }
 
 
