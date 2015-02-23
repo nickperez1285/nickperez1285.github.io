@@ -1,3 +1,12 @@
+#mypic{
+	display:inline-block;
+	margin-left: 4em;
+	margin-top: 1em;
+	
+	
+
+}
+
 body{
 	font-family: courier
 }
@@ -29,13 +38,14 @@ a:hover{
 
 }
 
+
 #head{
 	font-size: 3em;
 	font-family: "courier";
 	text-align: center ;
 	margin-right: 20px;
 	background: #eee;
-	
+	border-radius: 25px; 
 	border:  solid ;
 font-weight: bold ;
 
@@ -46,18 +56,21 @@ font-weight: bold ;
 
 
 #updates{
-	text-align: center ;
+	
 	border-style: solid ;
-	display:block;
-margin-left: auto;
-margin-right: auto;
+	display:inline- block;
+	float:left ;
+margin-left: 4em;
+margin-right: 3em
+;
 min-height: 150px;
 width: 500px; 
 font-size:30px; 
 background-color: rgba(255, 255, 255, 0.86);
 padding: 20px ;
 font-family: "courier";
-margin-top:4em;
+overflow: scroll;
+height: 7em;
 }
 
 
