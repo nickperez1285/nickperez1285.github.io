@@ -1,10 +1,11 @@
-#mypic{
-	display:inline-block;
-	margin-left: 4em;
-	margin-top: 1em;
-	border-radius: 50%;
-	border-style: solid ;
-	
+#me{
+	display:inline;
+	}
+
+#title{
+	display: initial; 
+
+	}
 
 }
 
@@ -13,6 +14,7 @@ body{
 }
 nav{
 	width:100%;
+	margin-right: 5em ;
 }
 ul li{
 	border: .2rem solid;
@@ -41,6 +43,7 @@ a:hover{
 
 
 #head{
+	display:block ;
 	font-size: 3em;
 	font-family: "courier";
 	text-align: center ;
@@ -59,13 +62,13 @@ font-weight: bold ;
 #updates{
 	
 	border-style: solid ;
-	display:inline- block;
+	display:inline-block;
 	float:left ;
 margin-left: 4em;
 margin-right: 3em
 ;
 min-height: 150px;
-width: 45%; 
+width: 30em; 
 font-size:30px; 
 background-color: rgba(255, 255, 255, 0.86);
 padding: 20px ;
@@ -81,11 +84,13 @@ html{
  background-image: url('http://nickperez1285.github.io/website-files/tokyo.jpg');
  background-size:100%;
 
+
 }
 
 footer{
 	font-size: 2em ;
+	margin-left: 2em ;
 	color: white;
-	margin-top: 3em ;
+	margin-top: 10em ;
 }
 
