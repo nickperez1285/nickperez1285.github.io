@@ -13,8 +13,8 @@ body{
 	font-family: courier
 }
 nav{
-	width:100%;
-	margin-right: 5em ;
+	width:80%;
+	margin-left: 10em ;
 }
 ul li{
 	border: .2rem solid;
@@ -23,6 +23,7 @@ ul li{
 	background-color: rgba(255, 255, 255, 0.86);
 	list-style: none;
     padding:20px;
+    border-radius: 25px;
 
 }
 li{
@@ -65,6 +66,7 @@ font-weight: bold ;
 	display:inline-block;
 	float:left ;
 margin-left: 4em;
+margin-top: 2em ;
 margin-right: 3em
 ;
 min-height: 150px;
@@ -74,7 +76,7 @@ background-color: rgba(255, 255, 255, 0.86);
 padding: 20px ;
 font-family: "courier";
 overflow: scroll;
-height: 7em;
+height: 10em;
 border-radius: 25px; 
 
 }
@@ -91,6 +93,6 @@ footer{
 	font-size: 2em ;
 	margin-left: 2em ;
 	color: white;
-	margin-top: 10em ;
+	margin-top: 18em ;
 }
 
