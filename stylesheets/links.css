@@ -6,7 +6,6 @@ h1{
 	border: solid; 
 	margin:20px;
 	border-radius: 25px;
-	font-size: 4.  5em ;
 
 }
 
@@ -24,7 +23,7 @@ h1{
 
 #navmap li{
 	float: left;
-	font-size: 40px
+	font-size: .75em
 }
 
 
