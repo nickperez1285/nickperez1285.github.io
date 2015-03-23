@@ -64,12 +64,10 @@ font-weight: bold ;
 	
 	border-style: solid ;
 	display:inline-block;
-	float:left ;
-margin-left: 4em;
+margin-left: 8em;
 margin-top: 2em ;
-margin-right: 3em;
+margin-right: 8em;
 min-height: 150px;
-width: 30em; 
 font-size:20px; 
 background-color: rgba(255, 255, 255, 0.86);
 padding: 20px ;
