@@ -1,0 +1,62 @@
+
+h1{
+
+	font-family: "courier";
+	text-align: center;
+	border: solid; 
+	margin:20px;
+	border-radius: 25px;
+	font-size: 3em ;
+
+}
+
+#navmap{
+
+
+/*	border: .125rem solid;
+*/	display: inline-block  ;
+	text-align: center; 
+	background-color: rgba(255, 255, 255, 0.86);
+	list-style: none;
+
+}
+
+
+#navmap li{
+	float: left;
+	font-size: .75em
+}
+
+
+
+
+li{
+	border-style: solid;
+	border-radius: 25px ;
+}
+
+body{
+	
+	text-align: center;
+	font-size: large;
+}
+
+
+ul{ 
+list-style: none;
+font-size: 1.5em;
+}
+
+a:link{
+	font-size :2em ;
+	text-decoration: none ;
+	font-family: "courier";
+	} 
+a:visited{ 
+	 color: grey
+}
+a:hover{
+
+	color: gold
+
+}
