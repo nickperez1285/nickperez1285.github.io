@@ -17,6 +17,7 @@ h1{
 
 /*	border: .125rem solid;
 */	display: inline-block  ;
+font-size: 14px ;
 	text-align: center; 
 	background-color: rgba(255, 255, 255, 0.86);
 	list-style: none;
