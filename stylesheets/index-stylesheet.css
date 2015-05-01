@@ -33,6 +33,7 @@ vertical-align: baseline;
   font-style: normal;
 }
 
+
 [data-icon]::before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -125,6 +126,11 @@ nav a:hover,
 nav a:active {
   color: black;
   text-decoration: underline;
+}
+
+
+.descripts{
+	margin: 4em;
 }
 
 
