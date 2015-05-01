@@ -170,16 +170,18 @@ font-weight: bold ;
 #couch{ 
  
 display: inline-block;
- 
+
+}
+
+#angel{
+	display: inline-block;
 }
 
 #updates{
 	width: 50%;
-	border-style: solid ;
+	border: solid ;
 	display:inline-block;
-/*margin-left: 8em;
-margin-top: 2em ;
-margin-right: 3em;*/
+
 min-height: 150px;
 font-size:20px; 
 background-color: rgba(255, 255, 255, 0.86);
@@ -196,7 +198,6 @@ footer{
 	display: block ;
 	font-size: 2em ;
 	margin-left: 2em ;
-	color: white;
-	margin-top: 10em ;
+	margin-top: 5em ;
 }
 
