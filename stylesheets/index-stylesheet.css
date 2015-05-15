@@ -175,12 +175,10 @@ font-weight: bold ;
 }
 
 #wins{
-  display: inline ;
+  display: inline-block ;
   width: 45%  ;
   height: 50em; 
-  position: right; 
   overflow: scroll ;
-  border: solid ;
 }
 
 #couch{ 
