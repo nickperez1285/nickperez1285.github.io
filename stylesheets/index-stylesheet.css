@@ -177,6 +177,7 @@ font-weight: bold ;
 #wins{
   display: inline ;
   width: 45%  ;
+  height: 50em; 
   position: right; 
   overflow: scroll ;
   border: solid ;
