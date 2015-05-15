@@ -175,9 +175,9 @@ font-weight: bold ;
 }
 
 #wins{
-  display: inline-block ;
-  width: 45%  ;
-  height: 50em; 
+  display: block ;
+  width: 45em  ;
+  height: 25em; 
   overflow: scroll ;
 }
 
@@ -194,14 +194,13 @@ display: inline-block;
 }
 
 #updates{
-	width: 50%;
 	border: solid ;
-	display:inline-block;
+	display:block;
+  margin-left: 3em;
 
 min-height: 150px;
 font-size:20px; 
 background-color: rgba(255, 255, 255, 0.86);
-padding: 20px ;
 font-family: "courier";
 overflow: scroll;
 height: 15em;
