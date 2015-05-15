@@ -174,7 +174,13 @@ font-weight: bold ;
 
 }
 
-#wins
+#wins{
+  display: inline ;
+  width: 45%  ;
+  position: right; 
+  overflow: scroll ;
+  border: solid ;
+}
 
 #couch{ 
  
