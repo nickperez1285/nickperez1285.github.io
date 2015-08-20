@@ -50,7 +50,7 @@ h1 {
   font-size: 40 px;
   color:#a3c2ff;
   letter-spacing: 5px;
-  font-size: large ;
+  font-size: 2em ;
 }
 
 h2 {
@@ -136,7 +136,9 @@ nav a:active {
 
 }
 
-
+#index-table{
+  height: 50%;
+}
 /*ul li{
 	border: .2rem solid;
 	display: inline ;
@@ -177,7 +179,7 @@ font-weight: bold ;
 
 #wins{
   display: block ;
-  height: 50%; 
+  height: 80%; 
   margin-right: 2em ;
   margin-left: 1em ;
   overflow: scroll ;
