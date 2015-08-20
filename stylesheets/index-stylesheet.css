@@ -50,6 +50,7 @@ h1 {
   font-size: 40 px;
   color:#a3c2ff;
   letter-spacing: 5px;
+  font-size: large ;
 }
 
 h2 {
@@ -176,9 +177,9 @@ font-weight: bold ;
 
 #wins{
   display: block ;
-  width: 45em  ;
-  height: 35em; 
-  margin-right: 3em ;
+  height: 50%; 
+  margin-right: 2em ;
+  margin-left: 1em ;
   overflow: scroll ;
 }
 
@@ -190,6 +191,15 @@ display: inline-block;
 
 
 
+
+#left-col{
+  width: 45% ;
+
+}#right-col{
+  width: 45% ;
+  vertical-align: top;
+}
+
 #angel{
 	display: inline-block;
 }
@@ -197,15 +207,16 @@ display: inline-block;
 #updates{
 	border: solid ;
 	display:block;
-  margin-left: 3em;
+  margin-left: 2em;
+  margin-right: 1em;
 
 min-height: 150px;
 font-size:20px; 
 background-color: rgba(255, 255, 255, 0.86);
 font-family: "courier";
 overflow: scroll;
-height: 15em;
-border-radius: 25px; 
+/*height: 100%;
+*/border-radius: .5em; 
 
 }
 
