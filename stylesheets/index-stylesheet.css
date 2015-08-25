@@ -183,6 +183,8 @@ font-weight: bold ;
   margin-right: 2em ;
   margin-left: 1em ;
   overflow: scroll ;
+  border:solid;
+  border-radius: .5em;
 }
 
 #couch{ 
