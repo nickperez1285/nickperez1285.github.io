@@ -4,10 +4,10 @@
 	
 <head>
   <!-- local -->
- <!--  <link rel="stylesheet" type="text/css" href="/Users/NicksMac/Desktop/Nicks DBC/nickperez1285.github.io/stylesheets/rubyzip.css"> -->
-
+<!--   <link type="text/css" rel="stylesheet" href= "C:\Users\WindowsU\Desktop\nicks_website\nickperez1285.github.io\stylesheets\index-stylesheet.css">
+ -->
   <!-- online  -->
-  <link type="text/css" rel="stylesheet" href= "https://nickperez1285.github.io/stylesheets/rubyzip.css">
+   <link type="text/css" rel="stylesheet" href= "https://nickperez1285.github.io/stylesheets/index-stylesheet.css">
 
 
 		<title>
@@ -19,52 +19,59 @@
 
   <nav>
     <ul>
-      <li> <a href ="http://nickperez1285.github.io/blog-posts/Links.html">My Portfolio </a></li>
-      <li><a href = "http://nickperez1285.github.io/blog-posts/my-blogs.html" >  My Blogs </a></li>
-      <li><a href="http://nickperez1285.github.io/blog-posts/aboutme.html"> About me </a> </li>
-      <li><a href="http://nickperez1285.github.io/blog-posts/contact.html"> Contact Info</a></li>
-      <a href="https://www.linkedin.com/in/nickperez1"><img src="http://www.unica-network.eu/sites/default/files/images/linkedin-icon.png" width="40" height="40" alt="Twitter" /></a>
+      <li><a href="http://nickperez1285.github.io"> Home /</a></li>
+      <li></span><a href="http://nickperez1285.github.io/blog-posts/Links.html">Web Dev Work & Samples/</a></li>
+
+      <!-- link to blogs taken out Aug 26 2015 -->
+      <!-- <li></span><a href="http://nickperez1285.github.io/blog-posts/my-blogs.html" > Blog /</a></li> -->
+      <li><a href="http://nickperez1285.github.io/blog-posts/aboutme.html"> About Me /</a></li> 
+      <li><a href="https://docs.google.com/document/d/1A-4Fhm9Bo98XJ-mi7RIr9jNNx9NgEr_uOgeZ79Re8D4/edit?usp=sharing"> Resume /</a></li> <li><a href="http://nickperez1285.github.io/blog-posts/Aerialport.html"> Aerial Media Porfolio /</a></li>
 
     </ul>
+    <a href="https://www.linkedin.com/in/nickperez1"><img src="http://nickperez1285.github.io/website-files/linkedin-icon.png" width="40" height="40"  alt="Twitter" /></a>
 
-    </nav> 
+
+
+  </nav> 
   </center>
-	<h3> Ruby's Zip Method</h3>
+	<h2> Ruby's Zip Method</h2>
 
 <body>
-<p>
-    A method in Ruby is defined as a"... bundle [of] one or more repeatable statements into a single unit.". One particular method that I have found very useful is the ".zip" method. This method will take an single array and merge it's elements with one more other arrays creating one single array consisting of sub-arrays with corresponding elements.  The following is a basic example of what the .zip method will return when dealing with two simple arrays: </p>
+  <article>
 
-<p> array1 = [a,b,c]<br>
-  array2 = [1,2,3] </p>
-<p> array1.zip(array2)</p>
- <p>   => [["a", 1], ["b", 2], ["c", 3]] </p>
+    A method in Ruby is defined as a"... bundle [of] one or more repeatable statements into a single unit.". One particular method that I have found very useful is the ".zip" method. This method will take an single array and merge it's elements with one more other arrays creating one single array consisting of sub-arrays with corresponding elements.  The following is a basic example of what the .zip method will return when dealing with two simple arrays: <br><br>
 
-  <p>  In this  example , the elements of "array1" have been zipped with those of "array2". It returns an array consisting of subarrays with elements of  matching index numbers. The .zip method can be expanded to accept multiple arrays  such as in the next example: </p>
-
+array1 = [a,b,c]<br>
+array2 = [1,2,3]<br>
+array1.zip(array2)<br><br>
+=> [["a", 1], ["b", 2], ["c", 3]] <br>
+<br>
+   In this  example , the elements of "array1" have been zipped with those of "array2". It returns an array consisting of subarrays with elements of  matching index numbers. The .zip method can be expanded to accept multiple arrays  such as in the next example: <br><br>
    <p> array1= ['a','b','c','d']<br>
        array2= [1,2,3,4]<br>
-       array3= ['@','#','$','%,'!']</p>
+       array3= ['@','#','$','%,'!']<br>
 
-   <p> array1.zip(array2,array3)</p>
+   <p> array1.zip(array2,array3)<br><br>
 
-   <p>=> [["a", 1, "@"], ["b", 2, "#"], ["c", 3, "$"], ["d", 4, "%"]]</p>
-    <p>As can be seen in this last example, so long as the base array contains enough elements, the resulting array of sub arrays will consists of elements with the same index number. </p>
+   => [["a", 1, "@"], ["b", 2, "#"], ["c", 3, "$"], ["d", 4, "%"]]<br><br>
 
-    <p>One of the more common uses for the .zip method is for converting arrays into hashes. The .zip method can take two arrays and have their matching elements stored into one single array that can easily be turned into a hash.</p>
+  As can be seen in this last example, so long as the base array contains enough elements, the resulting array of sub arrays will consists of elements with the same index number. <br><br>
 
-    <p>array1= [ 'key1', 'key2', 'key3'] <br>
-    array2= [ 'val1', 'val2', 'val3']</p>
+    One of the more common uses for the .zip method is for converting arrays into hashes. The .zip method can take two arrays and have their matching elements stored into one single array that can easily be turned into a hash. <br><br>
 
-    <p>array_unhashed = array1.zip(array2)</p>
-    <p>=> [["key1", "val1"], ["key2", "val2"], ["key3", "val3"]]</p>
+    array1= [ 'key1', 'key2', 'key3'] <br>
+    array2= [ 'val1', 'val2', 'val3']<br>
 
-    <p>hashed_array = Hash[array_unhashed.each{|key,value| [key => value] }]</p>
+    <p>array_unhashed = array1.zip(array2)</p><br>
+    <p>=> [["key1", "val1"], ["key2", "val2"], ["key3", "val3"]]</p><br>
 
-    <p>=>{"key3"=>"val3", "key1"=>"val1", "key2"=>"val2"}</p>
+    <p>hashed_array = Hash[array_unhashed.each{|key,value| [key => value] }]</p><br>
+
+    <p>=>{"key3"=>"val3", "key1"=>"val1", "key2"=>"val2"}</p><br>
 
     <p>The array_unhased was simply iterated through so that it could be output in hash form. You'll notice that the ["key","val"] array pairs in the primary array are  identical to the  "key"=> "val"  pairs within the hash. This is done all thanks to the .zip method.</p>
-</p>
+
+</article>
 
 	</body>
 </html>
