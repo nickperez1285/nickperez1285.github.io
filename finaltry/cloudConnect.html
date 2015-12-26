@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title >Cloud Connection</title>
+  <meta name="description" content="" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="headline">
+      <h1 style="color:black; font-style: cursive; border-radius: 25px; border: solid; text-align: center; margin-top: none ">Cloud Connection</h1>
+    </div>
+  </header>
+
+  <div class="controls">
+    <table id= "table1">
+
+     <tr> 
+       <td><div id="interactive" class="viewport"></div></td>
+       <section id="container" class="container">
+
+         <td>   
+           <!-- <fieldset class="input-group"> -->
+           <button class="stop">Stop</button>
+           <!-- </fieldset> -->
+         </td>
+         <td>
+          <button id = "generator">Confirm</button>
+        </td>
+      </tr>  
+
+      <fieldset class="reader-config-group">
+        <h1>Directions: Using web enabled camera , focus on barcode until image is captured </h1>
+            <div id = "genlink" ><a href="http://generator.barcoding.com/"> ** Generate custom QR codes HERE** </a></div>
+
+        <label>
+          <span>Barcode-Type</span>
+          <select name="decoder_readers">
+            <option value="code_128" selected="selected">Code 128</option>
+            <option value="code_39">Code 39</option>
+            <option value="ean">EAN</option>
+            <option value="ean_8">EAN-8</option>
+            <option value="upc">UPC</option>
+            <option value="upc_e">UPC-E</option>
+            <option value="codabar">Codabar</option>
+            <option value="i2of5">I2of5</option>
+          </select>
+        </label>
+        <label>
+          <span>Resolution (long side)</span>
+          <select name="input-stream_constraints">
+            <option value="320x240">320px</option>
+            <option selected="selected" value="640x480">640px</option>
+            <option value="800x600">800px</option>
+            <option value="1280x720">1280px</option>
+            <option value="1600x960">1600px</option>
+            <option value="1920x1080">1920px</option>
+          </select>
+        </label>
+        <label>
+          <span>Patch-Size</span>
+          <select name="locator_patch-size">
+            <option value="x-small">x-small</option>
+            <option value="small">small</option>
+            <option selected="selected" value="medium">medium</option>
+            <option value="large">large</option>
+            <option value="x-large">x-large</option>
+          </select>
+        </label>
+        <label>
+          <span>Half-Sample</span>
+          <input type="checkbox" checked="checked" name="locator_half-sample" />
+        </label>
+        <label>
+          <span>Workers</span>
+          <select name="numOfWorkers">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option selected="selected" value="4">4</option>
+            <option value="8">8</option>
+          </select>
+        </label>
+        <label>
+        </label>
+      </fieldset>
+    </tr>
+
+    <td>    
+    </div>
+    <div id="result_strip">
+      <ul class="thumbnails"></ul>
+    </div>
+  </td> 
+</section>
+</table>
+
+
+<section>
+
+<table id = "table2"  style= "border-radius: 25px; border: solid" > 
+<th>GENERAL INFO</th>
+<tr>
+<td><article id = "gensect"> 
+ <ul>
+   
+ </ul>
+</article></td>
+ </tr>
+ <tr>
+ <td><center><form >
+  <input type="text" style="width:75%">
+  <input type="submit" value="Submit">
+</form></center>
+</td>
+</tr>
+</table><br><br>
+
+
+<table id = "table3" style= "border-radius: 25px; border: solid" >  
+ <th>PERSONAL THOUGHTS AND NOTES</th>
+ <tr>
+ <td><article id = "persect">
+ <ul>
+   
+ </ul>
+
+ </article></td>
+ </tr>
+ <tr>
+ <td><center><form >
+  <input type="text" style="width:75%">
+  <input type="submit" value="Submit">
+</form></center>
+</td>
+</tr>
+</table><br><br>
+
+
+
+
+<table id = "table4" style= "border-radius: 25px; border: solid" > 
+ <th>PUBLIC FORUM</th>
+ <tr>
+ <td><article id = "pubsect">
+ <ul>
+   
+ </ul>
+
+ </article></td>
+ </tr>
+ <tr>
+ <td><center><form >
+  <input type="text" style="width:75%">
+  <input type="submit" value="Submit">
+</form></center>
+</td>
+</tr>
+</table><br><br>
+
+</section>
+
+<script type="text/javascript">
+var phone, accessToken, myDHS, myDHSURL = 'your_dhs_url';
+ 
+var xhrConfig = new XMLHttpRequest();
+xhrConfig.open('GET', myDHSURL + "/config/");
+xhrConfig.onreadystatechange = function() {
+     if (xhrConfig.readyState == 4) {
+          if (xhrConfig.status == 200) {
+          myDHS = JSON.parse(xhrConfig.responseText);
+      } else {
+          console.log(xhrConfig.responseText);
+      }
+     }
+}
+xhrConfig.send();  
+ 
+function createPhoneObject() {
+    phone = ATT.rtc.Phone.getPhone();
+    registerEvents();
+createPhoneObjectButton.hidden = true;
+createPhoneSuccessButton.hidden = false;
+}
+ 
+function registerEvents() {
+    phone.on('error', onError); 
+}
+ 
+function onError(data) {
+    console.log(data.error);
+}
+</script>
+<p>
+  <button id="createPhoneObjectButton" onclick="createPhoneObject()">Create Phone Object</button>
+  <button id="createPhoneSuccessButton" hidden disabled>Phone Object Created Successfully</button>
+</p>  
+
+
+<p>
+  <input type="text" id="callToInput" placeholder="Account ID/Telephone" hidden>
+  <button id="makeCallButton" onclick="makeCall()" hidden>Make Call alice@yourdomain.com or 1234567890</button>
+  <button id="answerCallButton" onclick="answerCall()" hidden>Answer Call</button>
+  <audio id="local" style="display:none"></audio>
+  <audio id="remote" style="display:none"></audio>
+</p>
+
+
+<script src="jquery-1.9.0.min.js"></script>
+<script src="quagga.js" ></script>
+<script src="live_w_locator.js" ></script>
+
+ <script> 
+  var item = $(".code")[0];
+  var item2gen = "Golden Gate Bridge";
+  var item2pers = "-Photo of me on Bridge www.nickperez.us/ggbridge";
+  var item2pub = " - Greatest bridge in the world. It was built by the Egyptians millions of years ago using nothing but seashells and pigs feet \n - ^ How dare you! My great granddad build the entire thing with his bare hands "  ;
+
+  var item1gen = "Ikea Set";
+  var item1pers = "-Every part cab be invididually  tagged with instructions and pictures on how to put the item together so that I can keep a digital reference in the event I move or need to troubleshoot any problems with it   ";
+  var item1pub= "-This public area can be used to share any sort of information about the product including reviews, price comparisons, or even to sell the item  "  ;
+
+  var item3gen = "-Parking Meter 888  at 888 1st street";
+  var item3pers = "-Move car at 3:52 ";
+  var item3pub= "-Payment is required between the hours of 8am -6pm  Monday - Friday . The following Holidays are free:  \n Christmas, Thanksgiving, New Years, Cinco de Mayo";
+
+  var item4gen = "Beers";
+  var item4pers = "-These are Nicks. Not YOURS!";
+  var item4pub = " -I (Mark) took one . I will be replace it ASAP!";
+
+  var item5gen = "Street Art / 'grafitti' by Banksy";
+  var item5pers = "-Notes shared by the artist about the work and the meaning behind it \n - contact info for interestd buyers ";
+  var item5pub = "-Comments and impressions from fans and passers bys ";
+
+  // grFITTI , DOH]]ICKY, DORITORS
+
+ $("#generator").click(function(){
+  var item = $(".code")[0];
+
+  if(item.innerHTML == "item 1"){
+    $("#gensect").append(item1gen);
+    $("#persect").append(item1pers);
+    $("#pubsect").append(item1pub);
+ }else if(item.innerHTML == "item 2"){
+    $("#gensect").append(item2gen);
+    $("#persect").append(item2pers);
+    $("#pubsect").append(item2pub);
+ }else if(item.innerHTML == "item 3"){
+    $("#gensect").append(item3gen);
+    $("#persect").append(item3pers);
+    $("#pubsect").append(item3pub);
+}else if(item.innerHTML == "item 4"){
+    $("#gensect").append(item4gen);
+    $("#persect").append(item4pers);
+    $("#pubsect").append(item4pub);
+}else if(item.innerHTML == "item 5"){
+    $("#gensect").append(item5gen);
+    $("#persect").append(item5pers);
+    $("#pubsect").append(item5pub);
+}else{
+  alert("Error reading item. Please reload this page");
+}
+});
+
+</script> 
+
+<script type="text/javascript">
+  
+   function enough(){
+    var snaps = $(".thumbnails")[0].children
+    if(snaps.length >1){
+      $('#stop').click()
+    }
+   }
+
+   enough()
+</script>
+
+
+</body>
+</html>
