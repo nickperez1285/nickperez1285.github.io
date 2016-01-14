@@ -20,13 +20,14 @@
 #interactive.viewport {
   width: 20em;
   height:15em;
+  position: center
 }
 
 
 video {
   height: 15em;
   width: auto;
-  float: left ;
+  position: center
 }
 
 canvas.drawingBuffer{
@@ -88,6 +89,7 @@ height: 2em;}*/
 /* line 50, ../sass/_viewport.scss */
 table{
   border:solid ;
+  position: center 
 }
 
 #genlink{
@@ -98,23 +100,23 @@ table{
 #table1{
   width: 45%;
 display: inline-table;
-float: left;
+border-radius: 25px
 
 }
 
 #table2{
-  width: 50%;
+  width: 80%;
 display: inline-table;
 overflow: scroll;
 }
 #table3{
-  width: 50%;
+  width: 80%;
 display: inline-table;
 overflow: scroll;
 
 }
 #table4{
-  width: 50%;
+  width: 80%;
 display: inline-table;
 overflow: scroll;
 

@@ -17,15 +17,15 @@
 <body>
   <header>
     <div class="headline">
-      <h1 style="color:black; font-style: cursive; border-radius: 25px; border: solid; text-align: center; margin-top: none ">Cloud Connection</h1>
+      <h1 style="color:black; font-style: cursive;  text-align: center; margin-top: none ">Cloud Connection</h1>
     </div>
   </header>
 
   <div class="controls">
-    <table id= "table1">
+  <center><table id= "table1">
 
      <tr> 
-       <td><div id="interactive" class="viewport"></div></td>
+       <center><td><div id="interactive" class="viewport"></div></td></center>
        <section id="container" class="container">
 
          <td>   
@@ -102,12 +102,11 @@
     </div>
   </td> 
 </section>
-</table>
-
-
+</table></center>                                                                    
+<hr>
 <section>
 
-<table id = "table2"  style= "border-radius: 25px; border: solid" > 
+<center><table id = "table2"  style= "border-radius: 25px; border: solid" > 
 <th>GENERAL INFO</th>
 <tr>
 <td><article id = "gensect"> 
@@ -123,10 +122,10 @@
 </form></center>
 </td>
 </tr>
-</table><br><br>
+</table></center><br><br>
 
 
-<table id = "table3" style= "border-radius: 25px; border: solid" >  
+<center><table id = "table3" style= "border-radius: 25px; border: solid" >  
  <th>PERSONAL THOUGHTS AND NOTES</th>
  <tr>
  <td><article id = "persect">
@@ -143,12 +142,12 @@
 </form></center>
 </td>
 </tr>
-</table><br><br>
+</table></center><br><br>
 
 
 
 
-<table id = "table4" style= "border-radius: 25px; border: solid" > 
+<center><table id = "table4" style= "border-radius: 25px; border: solid" > 
  <th>PUBLIC FORUM</th>
  <tr>
  <td><article id = "pubsect">
@@ -165,7 +164,7 @@
 </form></center>
 </td>
 </tr>
-</table><br><br>
+</table></center><br><br>
 
 </section>
 
@@ -200,10 +199,10 @@ function onError(data) {
     console.log(data.error);
 }
 </script>
-<p>
+<!-- <p>
   <button id="createPhoneObjectButton" onclick="createPhoneObject()">Create Phone Object</button>
   <button id="createPhoneSuccessButton" hidden disabled>Phone Object Created Successfully</button>
-</p>  
+</p>  --> 
 
 
 <p>
@@ -225,7 +224,7 @@ function onError(data) {
   var item2pers = "-Photo of me on Bridge www.nickperez.us/ggbridge";
   var item2pub = " - Greatest bridge in the world. It was built by the Egyptians millions of years ago using nothing but seashells and pigs feet \n - ^ How dare you! My great granddad build the entire thing with his bare hands "  ;
 
-  var item1gen = "Ikea Set";
+  var item1gen = "Eclipse Gum ";
   var item1pers = "-Every part cab be invididually  tagged with instructions and pictures on how to put the item together so that I can keep a digital reference in the event I move or need to troubleshoot any problems with it   ";
   var item1pub= "-This public area can be used to share any sort of information about the product including reviews, price comparisons, or even to sell the item  "  ;
 
@@ -246,7 +245,7 @@ function onError(data) {
  $("#generator").click(function(){
   var item = $(".code")[0];
 
-  if(item.innerHTML == "item 1"){
+  if(item.innerHTML == "0022000013316"){
     $("#gensect").append(item1gen);
     $("#persect").append(item1pers);
     $("#pubsect").append(item1pub);
